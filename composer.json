@@ -1,0 +1,43 @@
+{
+    "name": "timehunter/laravelemailchangeverification",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Deng",
+            "email": "ryandadeng@gmail.com",
+            "homepage": "https://github.com/RyanDaDeng"
+        }
+    ],
+    "homepage": "https://github.com/timehunter/laravelemailchangeverification",
+    "keywords": ["Laravel", "LaravelEmailChangeVerification"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TimeHunter\\LaravelEmailChangeVerification\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TimeHunter\\LaravelEmailChangeVerification\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TimeHunter\\LaravelEmailChangeVerification\\LaravelEmailChangeVerificationServiceProvider"
+            ],
+            "aliases": {
+                "LaravelEmailChangeVerification": "TimeHunter\\LaravelEmailChangeVerification\\Facades\\LaravelEmailChangeVerification"
+            }
+        }
+    }
+}
